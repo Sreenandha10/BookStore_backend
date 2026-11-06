@@ -92,7 +92,7 @@ exports.bookpaymentController = async (req, res) => {
             bookId: id,
             buyerEmail: loginUserMail
         },
-        success_url: `http://localhost:5173/success?session_id={CHECKOUT_SESSION_ID}`,
+        success_url: 'https://book-store-frontend-topaz.vercel.app/',
         cancel_url: 'http://localhost:5173/cancel'
     })
     console.log(session);
