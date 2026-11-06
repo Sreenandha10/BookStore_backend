@@ -92,7 +92,7 @@ exports.bookpaymentController = async (req, res) => {
             bookId: id,
             buyerEmail: loginUserMail
         },
-        success_url: 'https://book-store-frontend-topaz.vercel.app/',
+        success_url: 'https://book-store-frontend-topaz.vercel.app',
         cancel_url: 'http://localhost:5173/cancel'
     })
     console.log(session);
